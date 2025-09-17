@@ -37,6 +37,7 @@ export default function HomePage() {
 
         <section id="skills">
           <h2>Skills</h2>
+          <h3>Some of the Languages I specialise in :</h3>
           <ul>
             <li>JavaScript</li>
             <li>React</li>
@@ -64,7 +65,9 @@ export default function HomePage() {
       </main>
 
       <footer>
-        <p>© 2025 Steven. All rights reserved.</p>
+        <p>© 2025 Steven Mclardy. All rights reserved.</p>
+        <p>GMT+2 Time Zone</p>
+        <p>Johannesburg</p>
       </footer>
     </div>
   );
