@@ -31,9 +31,9 @@ export default function HomePage() {
           </div>
 
           <section id="hero">
-            <h1>Steven Mclardy</h1>
-            <p>Hi! I'm Steven and this is my personal space on the web.</p>
-            <p>Here you can view some of my projects and learn more about me.</p>
+            <h1 className="main-heading">Hi! I'm Steven Mclardy</h1>
+            <p>Here you can view some of my projects, learn more about me </p>
+            <p>or even contact me for collaborations.</p>
           </section>
 
           <section id="projects">

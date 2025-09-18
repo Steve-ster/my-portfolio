@@ -34,10 +34,10 @@ export default function RootLayout({ children }) {
           {children}
         </main>
 
-        <footer>
+        <footer className="footer">
           <p>© 2025 Steven Mclardy. All rights reserved.</p>
-          <p>GMT+2 Time Zone</p>
-          <p>Johannesburg</p>
+          <p>UTC+2</p>
+          <p>Johannesburg, South-Africa</p>
         </footer>
       </body>
     </html>

@@ -11,19 +11,18 @@ export default function SkillsPage() {
 
       <main className="main-content">
         <section id="skills">
-        <div className="skills-box">
-          <h2>Skills</h2>
-          <h3>Some of the Languages I specialise in:</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>CSS</li>
-            <li>UI/UX Design</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>Django</li>
-          </ul>
-        </div>
+          <div className="skills-box">
+            <h2>Skills</h2>
+            <ul>
+              <li>Harvard Cs50x</li>
+              <li>Harvard Cs50Python</li>
+              <li>Harvard Cs50Web</li>
+              <li>Harvard Cs50Ai</li>
+              <li>React Apps</li>
+              <li>Web apps</li>
+              <li>Api integration</li>
+            </ul>
+          </div>
         </section>
       </main>
     </>

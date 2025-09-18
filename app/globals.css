@@ -38,6 +38,8 @@ ul {
   z-index: 1000;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: right;
 }
 
 .navbar-image {
@@ -66,8 +68,9 @@ ul {
 footer {
   background-color: #171717;
   color: white;
-  text-align: center;
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -95,7 +98,7 @@ footer .nav-links li a:hover {
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -114,6 +117,8 @@ footer .nav-links li a:hover {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: inline-block;
 }
 
 .nav-links li a:hover {
@@ -128,7 +133,9 @@ footer .nav-links li a:hover {
   }
 
   .main-content {
-    padding-top: 0;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .profile-pic {
@@ -137,7 +144,12 @@ footer .nav-links li a:hover {
   }
 
   .profile-container {
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+
+  .footer {
+   display: flex;
+   flex-direction: row;
   }
   
 }
@@ -201,3 +213,8 @@ a:hover {
 .home-text:hover {
   color: #00bcd4;
 }
+
+.main-heading {
+  font-size: xx-large;
+}
+
