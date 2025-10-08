@@ -12,7 +12,20 @@ export default function AboutPage() {
       <main className="main-content">
         <section id="about">
           <h2>About Me</h2>
-          <p>I’m a passionate developer with a love for clean design and creative problem-solving.</p>
+          <ul>
+            <li>
+              <p>I’m a passionate developer with a love for clean design and creative problem-solving.</p>
+            </li>
+            <li>
+              <p>I classify myself as a full stack web developer with proficient skills in multiple languages.</p>
+            </li>  
+            <li>
+              <p>I enjoy spending lots of time on how a page looks but also how it functions. I believe a functional page is much better than a good looking one.</p>
+            </li>
+            {/* <li> 
+              <p></p>
+            </li> */}
+          </ul>
         </section>
       </main>
     </>
