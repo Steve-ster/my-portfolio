@@ -1,12 +1,20 @@
 import { supabase } from '@/lib/supabase';
+import { NextResponse } from 'next/server';
 
 export async function POST(request) {
   try {
     const { email, password } = await request.json();
 
+    // Ensure admin credentials exist in environment
+    if (!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASSWORD) {
+      console.error('ADMIN_EMAIL or ADMIN_PASSWORD not set');
+      return NextResponse.json({ error: 'Server not configured' }, { status: 500 });
+    }
+
     // Verify credentials match admin credentials
+    console.log('Attempting admin login for:', email);
     if (email !== process.env.ADMIN_EMAIL || password !== process.env.ADMIN_PASSWORD) {
-      return Response.json({ error: 'Invalid credentials' }, { status: 401 });
+      return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
     }
 
     // Get or create admin user in database
@@ -21,13 +29,13 @@ export async function POST(request) {
     }
 
     // Return success response
-    return Response.json({
+    return NextResponse.json({
       success: true,
       email: email,
       token: Buffer.from(email + ':' + Date.now()).toString('base64')
     });
   } catch (error) {
     console.error('Login error:', error);
-    return Response.json({ error: 'Internal server error' }, { status: 500 });
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
