@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth-context';
-import '../admin.css';
+import './admin.css';
 
 export default function AdminPanel() {
   const router = useRouter();

@@ -60,14 +60,14 @@ export default function ContactPage() {
       <main className="main-content">
         <section id="contact">
           <h2>Contact Me</h2>
-          <p>Feel free to reach out! I'll get back to you as soon as possible.</p>
+          <p>Feel free to reach out! I will get back to you as soon as possible.</p>
 
           <div className="contact-grid">
             <div className="contact-form-section">
               <form onSubmit={handleSubmit} className="contact-form">
                 {status === 'success' && (
                   <div className="success-message">
-                    Message sent successfully! I'll contact you soon.
+                    Message sent successfully! I will contact you soon.
                   </div>
                 )}
                 {status === 'error' && (

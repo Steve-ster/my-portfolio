@@ -13,7 +13,7 @@ export default function AboutPage() {
         <section id="about">
           <h2>About Me</h2>
           <p>
-            I'm a passionate developer with a love for clean design and creative problem-solving.
+            I am a passionate developer with a love for clean design and creative problem-solving.
             I build user-focused interfaces and small web applications, preferring simple,
             maintainable solutions that scale across devices.
           </p>

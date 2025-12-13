@@ -5,8 +5,8 @@ export default function SkillsPage() {
   return (
     <>
       <Head>
-        <title>Steven's Skills</title>
-        <meta name="description" content="Explore Steven's technical skills" />
+        <title>Stevens Skills</title>
+        <meta name="description" content="Explore Stevens technical skills" />
       </Head>
 
       <main className="main-content">
