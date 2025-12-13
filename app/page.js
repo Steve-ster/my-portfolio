@@ -45,7 +45,7 @@ export default function HomePage() {
                 <p>A multi-page website for a fictional services company built with HTML, CSS, and JavaScript.</p>
               </div>
             
-            <a href="https://steve-ster.github.io/steves-services/" className="project-link" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://steve-ster.github.io/steves-services/" className="project-link" target="_blank" rel="noopener noreferrer">Stevens Services</a>
           </section>
         </main>
       </div>
