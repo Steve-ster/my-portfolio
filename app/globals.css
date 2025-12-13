@@ -21,12 +21,11 @@ body {
 
 ul {
   display: inline-block;
-  text-align: left; /* keeps bullets aligned properly */
-  margin: 0 auto;   /* centers the block itself */
+  text-align: left;
+  margin: 0 auto;
 }
 
 
-/* Navbar stays at top */
 .navbar {
   position: fixed;
   top: 0;

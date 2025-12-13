@@ -32,13 +32,20 @@ export default function HomePage() {
 
           <section id="hero">
             <h1 className="main-heading">Hi! I am Steven Mclardy</h1>
-            <p>Here you can view some of my projects, learn more about me </p>
-            <p>or even contact me for collaborations.</p>
+            <p>I build modern web applications and I specialize in React and database-driven solutions.</p>
+            <p>Feel free to head to my contact page so we can get in touch and work on your next big idea!</p>
           </section>
 
           <section id="projects">
             <h2>Projects</h2>
             <p>Here are a few things I have built recently. More coming soon!</p>
+            
+              <div className="project-card">
+                <h3>Steves Services</h3>
+                <p>A multi-page website for a fictional services company built with HTML, CSS, and JavaScript.</p>
+              </div>
+            
+            <a href="https://steve-ster.github.io/steves-services/" className="project-link" target="_blank" rel="noopener noreferrer"></a>
           </section>
         </main>
       </div>
