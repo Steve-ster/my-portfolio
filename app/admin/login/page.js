@@ -63,7 +63,7 @@ export default function AdminLogin() {
           </button>
         </form>
 
-        <p className="helper-text">Use your admin credentials from .env.local</p>
+        {/* <p className="helper-text">Use your admin credentials from .env.local</p> */}
       </div>
     </div>
   );

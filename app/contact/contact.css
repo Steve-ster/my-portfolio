@@ -142,9 +142,19 @@
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
   }
 
   .contact-form {
     padding: 20px;
+  }
+}
+
+/* Ensure contact-info elements have spacing on small screens */
+@media (max-width: 480px) {
+  .contact-info {
+    padding: 16px;
   }
 }
