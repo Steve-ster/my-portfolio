@@ -113,6 +113,7 @@ footer .nav-links li a:hover {
   scrollbar-width: none; /* Firefox */
   align-items: center;
   white-space: nowrap;
+  padding-right: 1rem; /* ensure links are not flush against the right edge */
 }
 
 .nav-links::-webkit-scrollbar {
@@ -266,6 +267,10 @@ a:hover {
     box-shadow: none;
     gap: 0.5rem;
     justify-content: flex-end;
+  }
+
+  .nav-links {
+    padding-right: 12px;
   }
 
   .nav-links ul {

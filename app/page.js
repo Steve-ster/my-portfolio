@@ -38,14 +38,14 @@ export default function HomePage() {
 
           <section id="projects">
             <h2>Projects</h2>
-            <p>Here are a few things I have built recently. More coming soon!</p>
+            <p>Here are a few of my recent projects. More coming soon!</p>
             
               <div className="project-card">
-                <h3>Steves Services</h3>
-                <p>A multi-page website for a fictional services company built with HTML, CSS, and JavaScript.</p>
+                <h3>Steven's Services</h3>
+                <p>A multi-page website for a services company.</p>
               </div>
             
-            <a href="https://steve-ster.github.io/steves-services/" className="project-link" target="_blank" rel="noopener noreferrer">Stevens Services</a>
+            <a href="https://steve-ster.github.io/steves-services/" className="project-link" target="_blank" rel="noopener noreferrer" style={{ color: '#0070f3', textDecoration: 'underline', cursor: 'pointer' }}>Stevens Services - Click me</a>
           </section>
         </main>
       </div>
