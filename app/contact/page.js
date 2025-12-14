@@ -1,14 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
 import './contact.css';
-
-// Dynamically import Google Maps to avoid SSR issues
-const GoogleMap = dynamic(() => import('@/components/GoogleMap'), {
-  loading: () => <div className="map-loading">Loading map...</div>,
-  ssr: false
-});
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -129,10 +122,7 @@ export default function ContactPage() {
                 <p><strong>Time Zone:</strong> GMT+2</p>
               </div>
               
-              <div className="map-container">
-                <h3>Find Me Here</h3>
-                <GoogleMap />
-              </div>
+              {/* Map removed to avoid external Google API usage */}
             </div>
           </div>
         </section>

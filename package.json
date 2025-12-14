@@ -15,7 +15,6 @@
     "clean": "rm -rf .next out docs"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.20.7",
     "@supabase/supabase-js": "^2.87.1",
     "critters": "^0.0.23",
     "next": "^16.0.10",

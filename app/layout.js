@@ -9,18 +9,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const googleMapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
   return (
     <html lang="en">
-      <head>
-        {googleMapsKey && (
-          <script
-            async
-            src={`https://maps.googleapis.com/maps/api/js?key=${googleMapsKey}`}
-          ></script>
-        )}
-      </head>
+      <head />
       <body>
         <AuthProvider>
           <header className="navbar">
