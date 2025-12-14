@@ -121,8 +121,6 @@ export default function ContactPage() {
                 <p><strong>Location:</strong> Johannesburg, South Africa</p>
                 <p><strong>Time Zone:</strong> GMT+2</p>
               </div>
-              
-              {/* Map removed to avoid external Google API usage */}
             </div>
           </div>
         </section>

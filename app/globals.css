@@ -14,7 +14,6 @@ html, body {
   font-size: large;
 }
 
-/* Flex layout to push footer down */
 body {
   display: flex;
   flex-direction: column;
@@ -62,14 +61,11 @@ ul {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Push content below navbar */
 .main-content {
   flex: 1;
   padding-top: 100px;
 }
 
-/* Footer as bottom nav */
 footer {
   background-color: #171717;
   color: white;
@@ -79,7 +75,6 @@ footer {
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Optional: footer nav styling */
 footer .nav-links {
   display: flex;
   justify-content: center;
@@ -110,14 +105,14 @@ footer .nav-links li a:hover {
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
   align-items: center;
   white-space: nowrap;
-  padding-right: 1rem; /* ensure links are not flush against the right edge */
+  padding-right: 1rem;
 }
 
 .nav-links::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .nav-links li a {
@@ -136,7 +131,6 @@ footer .nav-links li a:hover {
 
 @media (max-width: 600px) {
   .nav-links {
-    /* Keep links visible on small screens and allow wrapping */
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -150,7 +144,7 @@ footer .nav-links li a:hover {
   }
 
   .home-text {
-    display: none; /* reduce space for small screens */
+    display: none;
   }
 
   .profile-pic {
@@ -233,16 +227,14 @@ a:hover {
   font-size: xx-large;
 }
 
-/* Burger button */
 .burger {
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Currently not used; keep hidden */
+  display: none;
 }
 
-/* Navigation links */
 .nav-links {
   display: flex;
   gap: 1rem;
@@ -254,9 +246,7 @@ a:hover {
   gap: 1rem;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
-  /* Keep nav links visible; make them wrap and remain accessible */
   .nav-links {
     display: flex;
     position: static;
@@ -284,7 +274,6 @@ a:hover {
   }
 }
 
-/* Ensure main-content spacing corresponds to navbar height on larger screens */
 @media (min-width: 769px) {
   .main-content {
     padding-top: calc(var(--nav-height) + 16px);

@@ -152,7 +152,6 @@
   }
 }
 
-/* Ensure contact-info elements have spacing on small screens */
 @media (max-width: 480px) {
   .contact-info {
     padding: 16px;

@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // image optimization settings
     images: {
         remotePatterns: [
             {
@@ -17,15 +16,12 @@ const nextConfig = {
         formats: ['image/webp', 'image/avif'],
     },
 
-    // Performance optimizations
     experimental: {
         optimizeCss: true,
     },
 
-    // compress responses
     compress: true,
 
-    // security headers
     async headers() {
         return [
             {
