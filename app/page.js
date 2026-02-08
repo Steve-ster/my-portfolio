@@ -33,15 +33,15 @@ export default function HomePage() {
           <section id="hero">
             <h1 className="main-heading">Hi! I am Steven Mclardy</h1>
             <p>I build modern web applications and I specialize in React and database-driven solutions.</p>
-            <p>Feel free to head to my contact page so we can get in touch and work on your next big idea!</p>
+            <p>Feel free to head to my contact page so we can get in touch and work on your next big idea!</p><br /><br /><br />
           </section>
 
           <section id="projects">
             <h2>Projects</h2>
-            <p>Here are a few of my recent projects. More coming soon!</p>
+            <p>Here are a few of my recent projects. More coming soon!</p><br /><br /><br />
             
               <div className="project-card">
-                <h3>Steven's Services</h3>
+                <h3>Stevens Services</h3>
                 <p>A multi-page website for a services company.</p>
               </div>
             
