@@ -12,7 +12,8 @@ export default function Navbar() {
     { href: '/', label: 'Home', icon: '⚡' },
     { href: '/about', label: 'About', icon: '📖' },
     { href: '/projects', label: 'Projects', icon: '🚀' },
-    { href: '/contact', label: 'Contact', icon: '📬' }
+    { href: '/contact', label: 'Contact', icon: '📬' },
+    { href: '/admin', label: 'Admin', icon: '🛠️'}
   ]
 
   return (
@@ -42,7 +43,7 @@ export default function Navbar() {
           textShadow: '0 0 10px var(--text-glow)',
           letterSpacing: '2px'
         }}>
-          PLAYER_STATS
+          CAREER_STATS
         </Link>
 
         {/* Desktop Menu */}

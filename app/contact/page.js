@@ -30,10 +30,10 @@ export default function Contact() {
   }
 
   const contacts = [
-    { icon: "📧", label: "Email", value: "mclardysteven2910@gmail.com", href: "mclardysteven2910@gmail.com" },
+    { icon: "📧", label: "Email", value: "mclardysteven2910@gmail.com", },
     { icon: "💼", label: "LinkedIn", value: "https://www.linkedin.com/in/steven-mclardy2910/", href: "https://www.linkedin.com/in/steven-mclardy2910/" },
     { icon: "🐙", label: "GitHub", value: "https://github.com/Steve-ster", href: "https://github.com/Steve-ster" },
-    { icon: "🐦", label: "Twitter", value: "empty", href: "https://twitter.com/" }
+    { icon: "🐦", label: "Twitter", value: "https://x.com/SMclardy", href: "https://x.com/SMclardy" }
   ]
 
   return (

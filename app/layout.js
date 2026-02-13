@@ -2,8 +2,8 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 
 export const metadata = {
-  title: 'Player Stats - Portfolio',
-  description: 'Solo Leveling themed developer portfolio',
+  title: 'Steven Mclardy',
+  description: 'Stevens portfolio',
 }
 
 export default function RootLayout({ children }) {

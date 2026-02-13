@@ -16,19 +16,21 @@ export default function About() {
             The Journey Begins
           </h2>
           <p style={{ marginBottom: '20px', color: '#b3d9ff' }}>
-            I'm a passionate Full Stack Developer who started coding at age 15. 
+            Hi! My name is Steven and I'm a passionate Software Developer who ran his first "Hello world" at the age of 16. 
+            Back then I was simply messing around with this new thing called "coding". Fast forward a few years and here I am,
+            designing my own Website all about myself and my accomplishments to share with the world.
             What began as curiosity quickly evolved into an obsession with creating 
             elegant solutions to complex problems.
           </p>
           <p style={{ marginBottom: '20px', color: '#b3d9ff' }}>
-            Over the years, I've leveled up my skills across the entire technology stack, 
-            from crafting pixel-perfect user interfaces to architecting robust backend systems. 
-            My quest is to build applications that not only function flawlessly but also 
-            provide exceptional user experiences.
+            Over the years, I've leveled up my skills in multiple languages such as Python, JavaScript and web development technologies.
+            As well as the RSJN (React, Supabase, JavaScript, Node.js) stack as I like to call it, also used for this exact website.
+            My quest in life is to build applications that not only function flawlessly but also 
+            provide exceptional user experiences to help connect consumers to businesses.
           </p>
           <p style={{ color: '#b3d9ff' }}>
-            When I'm not coding, you'll find me exploring new technologies, contributing to 
-            open source projects, or sharing knowledge through tech talks and mentoring.
+            When I'm not coding, you'll find me exploring new technologies, watching endless tutorials
+            , or simply gaming/working out.
           </p>
         </div>
       </StatWindow>
@@ -50,10 +52,10 @@ export default function About() {
               Education
             </h3>
             <p style={{ color: '#b3d9ff', marginBottom: '5px' }}>
-              <strong>Bachelor's in Computer Science</strong>
+              <strong>Software Development</strong>
             </p>
             <p style={{ color: '#6c9cc1', fontSize: '0.9rem' }}>
-              University Name • 2015 - 2019
+              UniCollege • Jan 2025 - Jan 2026
             </p>
           </div>
 
@@ -72,10 +74,10 @@ export default function About() {
               Current Role
             </h3>
             <p style={{ color: '#b3d9ff', marginBottom: '5px' }}>
-              <strong>Senior Full Stack Developer</strong>
+              <strong>Junior Software Developer</strong>
             </p>
             <p style={{ color: '#6c9cc1', fontSize: '0.9rem' }}>
-              Tech Company • 2021 - Present
+              Exploring options • Present
             </p>
           </div>
 
@@ -94,7 +96,7 @@ export default function About() {
               Specializations
             </h3>
             <p style={{ color: '#b3d9ff' }}>
-              Web Applications • Cloud Architecture • API Design • UI/UX Development
+              Web Applications • Static web pages • UI/UX Development
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function Projects() {
 
   return (
     <div className="main-container">
-      <StatWindow title="🚀 Quest Log" delay={0}>
+      <StatWindow title="🚀 Projects Log" delay={0}>
         <div style={{ marginBottom: '30px' }}>
           <div style={{
             display: 'flex',
