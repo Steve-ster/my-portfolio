@@ -5,7 +5,7 @@ import StatWindow from '@/components/StatWindow'
 export default function About() {
   return (
     <div className="main-container">
-      <StatWindow title="📖 About Me" delay={0}>
+      <StatWindow title="📖 About me" delay={0}>
         <div style={{ lineHeight: '1.8' }}>
           <h2 style={{ 
             fontFamily: 'Orbitron', 
@@ -15,6 +15,13 @@ export default function About() {
           }}>
             The Journey Begins
           </h2>
+          <p style={{ marginBottom: '20px', color: '#b3d9ff',  }}>
+            <strong>
+              Do you own a small business that you just can't seem to grow? Well I'm glad to tell you that you are in the right
+              place! My goal is to help small businesses grow and reach their target audience. I build engaging websites that convince
+              visitors to buy/use your product. Visit my <a href="/contact">contact page</a> to get in touch with me.
+            </strong>
+          </p>
           <p style={{ marginBottom: '20px', color: '#b3d9ff' }}>
             Hi! My name is Steven and I'm a passionate Software Developer who ran his first "Hello world" at the age of 16. 
             Back then I was simply messing around with this new thing called "coding". Fast forward a few years and here I am,

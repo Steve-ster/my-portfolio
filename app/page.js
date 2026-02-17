@@ -9,27 +9,27 @@ import SkillBar from '@/components/SkillBar'
 export default function Home() {
   const playerData = {
     name: "Steven Mclardy",
-    title: "Junior Software Developer",
+    title: "Full stack developer delivering modern web solutions for small businesses",
     class: "Information Technology",
     level: 19
   }
 
   const stats = [
     { label: "Experience", value: "1.2 Years" },
-    { label: "Major Projects Completed", value: "3" },
-    { label: "Lines of Code", value: "Infinite" },
+    { label: "Major Projects Completed", value: "2" },
+    { label: "On time delivery?", value: "Guaranteed" },
     { label: "Team Size", value: "1 Member" },
-    { label: "Coffee Consumed", value: "∞" },
-    { label: "Bug Slayer Rank", value: "S-Rank" }
+    { label: "Technologies learned", value: "9" },
+    { label: "Businesses helped", value: "None yet" }
   ]
 
   const skills = [
-    { name: "Python", level: 19 },
-    { name: "JavaScript / TypeScript", level: 15 },
-    { name: "React / Next.js", level: 12 },
-    { name: "Node.js", level: 10 },
-    { name: "Database Management", level: 10 },
-    { name: "DevOps / Cloud (AWS)", level: 5 },
+    { name: "Python", level: 15 },
+    { name: "JavaScript", level: 15 },
+    { name: "React", level: 12 },
+    { name: "JSON", level: 10 },
+    { name: "Supabase", level: 10 },
+    { name: "HTML5 + CSS", level: 5 },
   ]
 
   const certifications = [
@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <div className="main-container">
       {/* Main Stats Window */}
-      <StatWindow title="⚡ Player Profile" delay={0}>
+      <StatWindow title="⚡ Dev.Portfolio" delay={0}>
         <PlayerInfo 
           name={playerData.name}
           title={playerData.title}
