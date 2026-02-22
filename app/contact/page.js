@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import StatWindow from '@/components/StatWindow'
+import { supabase } from '@/lib/supabase'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -15,11 +16,25 @@ export default function Contact() {
     e.preventDefault()
     setStatus({ type: 'loading', message: 'Sending message...' })
 
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
+    try {
+      const { data, error } = await supabase
+        .from('messages')
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message
+          }
+        ])
+
+      if (error) throw error
+
       setStatus({ type: 'success', message: 'Message sent successfully! I\'ll get back to you soon.' })
       setFormData({ name: '', email: '', message: '' })
-    }, 1500)
+    } catch (error) {
+      console.error('Error sending message:', error)
+      setStatus({ type: 'error', message: 'Failed to send message. Please try again.' })
+    }
   }
 
   const handleChange = (e) => {

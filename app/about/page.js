@@ -32,7 +32,7 @@ export default function About() {
           <p style={{ marginBottom: '20px', color: '#b3d9ff' }}>
             Over the years, I've leveled up my skills in multiple languages such as Python, JavaScript and web development technologies.
             As well as the RSJN (React, Supabase, JavaScript, Node.js) stack as I like to call it, also used for this exact website.
-            My quest in life is to build applications that not only function flawlessly but also 
+            My goal is to build applications that not only function flawlessly but also 
             provide exceptional user experiences to help connect consumers to businesses.
           </p>
           <p style={{ color: '#b3d9ff' }}>

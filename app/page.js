@@ -17,19 +17,19 @@ export default function Home() {
   const stats = [
     { label: "Experience", value: "1.2 Years" },
     { label: "Major Projects Completed", value: "2" },
-    { label: "On time delivery?", value: "Guaranteed" },
+    { label: "On time delivery?", value: "Almost guaranteed" },
     { label: "Team Size", value: "1 Member" },
     { label: "Technologies learned", value: "9" },
     { label: "Businesses helped", value: "None yet" }
   ]
 
   const skills = [
-    { name: "Python", level: 15 },
-    { name: "JavaScript", level: 15 },
-    { name: "React", level: 12 },
-    { name: "JSON", level: 10 },
-    { name: "Supabase", level: 10 },
-    { name: "HTML5 + CSS", level: 5 },
+    { name: "Python", description: "Intermediate" },
+    { name: "JavaScript", description: "Intermediate" },
+    { name: "React", description: "Intermediate" },
+    { name: "JSON", description: "Beginner" },
+    { name: "Supabase", description: "Advanced" },
+    { name: "HTML5 + CSS", description: "Advanced" },
   ]
 
   const certifications = [
@@ -105,7 +105,7 @@ export default function Home() {
             <SkillBar
               key={index}
               name={skill.name}
-              level={skill.level}
+              description={skill.description}
               delay={700 + (index * 100)}
             />
           ))}
