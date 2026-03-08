@@ -11,13 +11,41 @@ Welcome to my personal developer portfolio. If you are a fellow developer feel f
 - 📬 **Contact**: A contact form to get in touch with me
 - 🔐 **Admin Portal**: Secure authentication and project management where I can add/edit/remove projects
 
-## Setup Instructions
+## Tech Stack
 
-### 1. Install Dependencies
+Frontend
 
-```bash
-npm install
-```
+-Framework: Next.js 14 (App Router)
+-Language: JavaScript (ES6+)
+-UI Library: React 18
+-Styling: CSS-in-JS (Inline Styles with CSS Variables)
+-Fonts: Google Fonts (Orbitron, Rajdhani)
+
+Backend
+
+-Database: Supabase (PostgreSQL)
+-Authentication: Supabase Auth
+-API: Supabase REST API
+-Security: Row Level Security (RLS) Policies
+
+Development Tools
+
+-Package Manager: npm
+-Linting: ESLint (next/core-web-vitals)
+-Version Control: Git
+-Code Editor: VS Code
+
+Deployment & Hosting
+
+-Platform: Vercel
+-CI/CD: Automatic deployment via Git integration
+-Domain: Vercel subdomain (or custom domain)
+
+Performance & SEO
+
+-Image Optimization: Next.js Image Component
+-SEO: Meta tags, sitemap.xml, robots.txt, Schema.org structured data
+-Performance Monitoring: Lighthouse
 
 
 ### Add Projects
@@ -25,14 +53,6 @@ npm install
 2. Fill out the project form
 3. Projects appear automatically on `/projects`
 
-
-## Tech Stack
-
-- **Framework**: Next.js 14 (App Router)
-- **Styling**: CSS-in-JS (inline styles)
-- **Database**: Supabase (PostgreSQL)
-- **Authentication**: Supabase Auth
-- **Fonts**: Orbitron, Rajdhani (Google Fonts)
 
 ## License
 
