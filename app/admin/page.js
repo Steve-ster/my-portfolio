@@ -7,7 +7,6 @@ import StatWindow from '@/components/StatWindow'
 
 export default function AdminDashboard() {
   const router = useRouter()
-  const [user, setUser] = useState(null)
   const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
   const [formData, setFormData] = useState({
@@ -24,7 +23,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     checkAuth()
     fetchProjects()
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const checkAuth = async () => {
     const { data: { session } } = await supabase.auth.getSession()
@@ -34,7 +33,6 @@ export default function AdminDashboard() {
       return
     }
     
-    setUser(session.user)
     setLoading(false)
   }
 
@@ -129,7 +127,25 @@ export default function AdminDashboard() {
   }
 
   if (loading) {
-    return <div className="main-container">Loading...</div>
+    return (
+      <div className="main-container">
+        <StatWindow title="⏳ Loading" delay={0}>
+          <div style={{ 
+            textAlign: 'center', 
+            padding: '60px 20px',
+          }}>
+            <div style={{
+              color: 'var(--primary-blue)',
+              fontFamily: 'Orbitron',
+              fontSize: '1.2rem',
+              marginBottom: '20px'
+            }}>
+              Authenticating...
+            </div>
+          </div>
+        </StatWindow>
+      </div>
+    )
   }
 
   return (
@@ -200,7 +216,7 @@ export default function AdminDashboard() {
           </div>
 
           <div className="mb-20">
-            <label htmlFor="github_url">GitHub URL (optional)</label>
+            <label htmlFor="github_url">GitHub URL </label>
             <input
               type="url"
               id="github_url"
@@ -210,7 +226,7 @@ export default function AdminDashboard() {
           </div>
 
           <div className="mb-20">
-            <label htmlFor="live_url">Live URL (optional)</label>
+            <label htmlFor="live_url">Live URL </label>
             <input
               type="url"
               id="live_url"
@@ -220,7 +236,7 @@ export default function AdminDashboard() {
           </div>
 
           <div className="mb-30">
-            <label htmlFor="image_url">Image URL (optional)</label>
+            <label htmlFor="image_url">Image URL </label>
             <input
               type="url"
               id="image_url"

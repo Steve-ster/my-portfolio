@@ -14,6 +14,12 @@ export default function Projects() {
     fetchProjects()
   }, [])
 
+  /**
+   * Fetches all projects from Supabase database
+   * Retrieves projects ordered by creation date (newest first)
+   * @async
+   * @returns {Promise<void>}
+   */
   const fetchProjects = async () => {
     try {
       const { data, error } = await supabase
@@ -68,11 +74,36 @@ export default function Projects() {
         {loading ? (
           <div style={{ 
             textAlign: 'center', 
-            padding: '40px', 
-            color: 'var(--primary-blue)',
-            fontFamily: 'Orbitron'
+            padding: '60px 20px',
           }}>
-            Loading projects...
+            <div style={{
+              color: 'var(--primary-blue)',
+              fontFamily: 'Orbitron',
+              fontSize: '1.2rem',
+              marginBottom: '20px',
+              animation: 'pulse 2s ease-in-out infinite'
+            }}>
+              Loading projects...
+            </div>
+            <div style={{
+              width: '60px',
+              height: '60px',
+              margin: '0 auto',
+              border: '3px solid rgba(0, 212, 255, 0.3)',
+              borderTop: '3px solid var(--primary-blue)',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite' 
+            }}></div>
+            <style jsx>{`
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+              @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.5; }
+              }
+            `}</style>
           </div>
         ) : filteredProjects.length === 0 ? (
           <div style={{ 
@@ -80,7 +111,7 @@ export default function Projects() {
             padding: '40px', 
             color: '#6c9cc1'
           }}>
-            No projects found. Start by adding some in the admin panel!
+            No projects here yet.
           </div>
         ) : (
           <div style={{

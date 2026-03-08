@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function PlayerInfo({ name, title, playerClass, level }) {
   return (
     <div style={{
@@ -21,16 +23,16 @@ export default function PlayerInfo({ name, title, playerClass, level }) {
           alignItems: 'center',
           justifyContent: 'center',
           animation: 'avatarFloat 3s ease-in-out infinite',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          position: 'relative'
         }}>
-          <img 
+          <Image 
             src="/profile.jpg"
-            alt="Profile"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover'
-            }}
+            alt="Profile Picture"
+            fill
+            sizes="120px"
+            style={{objectFit: 'cover'}}
+            priority
           />
         </div>
         <div style={{

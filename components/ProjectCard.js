@@ -1,7 +1,14 @@
 'use client'
 
+import Link from 'next/link'
+import Image from 'next/image'
+
 export default function ProjectCard({ project, delay = 0 }) {
   return (
+    <Link 
+      href={`/projects/${project.id}`}
+      style={{ textDecoration: 'none', display: 'block' }}
+    >
     <div style={{
       background: 'linear-gradient(135deg, rgba(0, 68, 102, 0.2) 0%, rgba(0, 26, 51, 0.4) 100%)',
       border: '1px solid rgba(0, 212, 255, 0.3)',
@@ -11,7 +18,8 @@ export default function ProjectCard({ project, delay = 0 }) {
       animation: `projectAppear 0.6s ease backwards ${delay}s`,
       display: 'flex',
       flexDirection: 'column',
-      height: '100%'
+      height: '100%',
+      cursor: 'pointer'
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.background = 'linear-gradient(135deg, rgba(0, 68, 102, 0.4) 0%, rgba(0, 26, 51, 0.6) 100%)'
@@ -34,7 +42,7 @@ export default function ProjectCard({ project, delay = 0 }) {
           overflow: 'hidden',
           border: '1px solid rgba(0, 212, 255, 0.3)'
         }}>
-          <img 
+          <Image 
             src={project.image_url} 
             alt={project.title}
             style={{
@@ -180,5 +188,6 @@ export default function ProjectCard({ project, delay = 0 }) {
         }
       `}</style>
     </div>
+    </Link>
   )
 }

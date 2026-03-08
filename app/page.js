@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import StatWindow from '@/components/StatWindow'
 import PlayerInfo from '@/components/PlayerInfo'
 import StatItem from '@/components/StatItem'
@@ -15,21 +14,21 @@ export default function Home() {
   }
 
   const stats = [
-    { label: "Experience", value: "1.2 Years" },
-    { label: "Major Projects Completed", value: "2" },
-    { label: "On time delivery?", value: "Almost guaranteed" },
-    { label: "Team Size", value: "1 Member" },
-    { label: "Technologies learned", value: "9" },
-    { label: "Businesses helped", value: "None yet" }
+    { label: "Experience", value: "1+ Years" },
+    { label: "Projects completed", value: "2+" },
+    { label: "Customer satisfaction", value: "98%" },
+    { label: "Coffee consumed", value: "500+ cups" },
+    { label: "Technologies used", value: "9+" },
+    { label: "Currently learning", value: "Advanced backend" }
   ]
 
   const skills = [
+    { name: "HTML5 + CSS", description: "Advanced" },
     { name: "Python", description: "Intermediate" },
     { name: "JavaScript", description: "Intermediate" },
     { name: "React", description: "Intermediate" },
-    { name: "JSON", description: "Beginner" },
-    { name: "Supabase", description: "Advanced" },
-    { name: "HTML5 + CSS", description: "Advanced" },
+    { name: "Supabase", description: "Intermediate" },
+    { name: "Next.js", description: "Intermediate" },
   ]
 
   const certifications = [
@@ -74,7 +73,7 @@ export default function Home() {
   return (
     <div className="main-container">
       {/* Main Stats Window */}
-      <StatWindow title="⚡ Dev.Portfolio" delay={0}>
+      <StatWindow title="⚡ My Portfolio" delay={0}>
         <PlayerInfo 
           name={playerData.name}
           title={playerData.title}

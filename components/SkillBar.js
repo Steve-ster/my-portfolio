@@ -1,14 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-
 export default function SkillBar({ name, description, delay = 0 }) {
-  const [width, setWidth] = useState(0)
+  // const [width, setWidth] = useState(0)
 
-  useEffect(() => {
-    const timer = setTimeout(() => setWidth(description), delay)
-    return () => clearTimeout(timer)
-  }, [description, delay])
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setWidth(description), delay)
+  //   return () => clearTimeout(timer)
+  // }, [description, delay])
 
   return (
     <div style={{

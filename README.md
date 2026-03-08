@@ -1,15 +1,15 @@
-# Solo Leveling Portfolio
+# My personal developer portfolio
 
-A stunning portfolio website with Solo Leveling themed UI featuring stat windows, animations, and an admin portal.
+Welcome to my personal developer portfolio. If you are a fellow developer feel free to explore my portfolio and get inspiration for yours!
 
 ## Features
 
-- 🎮 **Solo Leveling Theme**: Iconic blue stat windows with glowing effects
-- 🏠 **Home**: Player stats, skills, and achievements
-- 📖 **About**: Personal background and experience
-- 🚀 **Projects**: Dynamic project showcase with filtering
-- 📬 **Contact**: Contact form and social links
-- 🔐 **Admin Portal**: Secure authentication and project management
+- 🎮 **Gaming/Personality theme**: Iconic blue stat windows with glowing effects
+- 🏠 **Home**: My Career stats, skills, and achievements
+- 📖 **About**: My Personal background and experience
+- 🚀 **Projects**: My finished projects are showcased here 
+- 📬 **Contact**: A contact form to get in touch with me
+- 🔐 **Admin Portal**: Secure authentication and project management where I can add/edit/remove projects
 
 ## Setup Instructions
 

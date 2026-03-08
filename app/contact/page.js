@@ -17,7 +17,7 @@ export default function Contact() {
     setStatus({ type: 'loading', message: 'Sending message...' })
 
     try {
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('messages')
         .insert([
           {
@@ -48,12 +48,14 @@ export default function Contact() {
     { icon: "📧", label: "Email", value: "mclardysteven2910@gmail.com", },
     { icon: "💼", label: "LinkedIn", value: "https://www.linkedin.com/in/steven-mclardy2910/", href: "https://www.linkedin.com/in/steven-mclardy2910/" },
     { icon: "🐙", label: "GitHub", value: "https://github.com/Steve-ster", href: "https://github.com/Steve-ster" },
-    { icon: "🐦", label: "Twitter", value: "https://x.com/SMclardy", href: "https://x.com/SMclardy" }
+    { icon: "🐦", label: "Twitter", value: "https://x.com/SMclardy", href: "https://x.com/SMclardy" },
+    { icon: "📍", label: "Location", value: "Based in Johannesburg, South Africa (GMT+2)" },
+    { icon: "🌍", label: "Internationality", value: "Available for remote work worldwide" }
   ]
 
   return (
     <div className="main-container">
-      <StatWindow title="📬 Quest Contact" delay={0}>
+      <StatWindow title="📬 Contact" delay={0}>
         <form onSubmit={handleSubmit}>
           <div className="mb-20">
             <label htmlFor="name">Name</label>

@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block admin pages
+Disallow: /admin/
+Disallow: /admin/login/
+
+# Sitemap location
+Sitemap: https://my-portfolio-rosy-kappa-89.vercel.app/sitemap.xml

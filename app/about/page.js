@@ -1,6 +1,11 @@
-'use client'
+
 
 import StatWindow from '@/components/StatWindow'
+
+export const metadata = {
+  title: 'About Me',
+  description: 'Learn about my journey as a Full Stack Developer, my skills, and experience.',
+}
 
 export default function About() {
   return (
